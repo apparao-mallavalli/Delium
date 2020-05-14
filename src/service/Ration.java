@@ -12,8 +12,6 @@ public class Ration {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-	
-		
 		
 		int quantity_in_kgs;
 		
@@ -129,7 +127,10 @@ public class Ration {
 							//System.out.println(total);
 							
 							if(reminder>=(quantity_in_kgs-total)) {
-								reminder=quantity_in_kgs-total;
+								
+if(((first[i]/sizes[0])>=logistics_constraints[0]||first[i]/sizes[0]==0)&&((second[j]/sizes[1])>=logistics_constraints[1]||second[j]/sizes[1]==0)&&((third[k]/sizes[2])>=logistics_constraints[2]||third[k]/sizes[2]==0)&&((fourth[l]/sizes[3])>=logistics_constraints[3]||fourth[l]/sizes[2]==0))
+								{
+									reminder=quantity_in_kgs-total;
 								//System.out.println(reminder);
 								
 								//storing the units into allocation array
@@ -143,6 +144,7 @@ public class Ration {
 								for(int m=0;m<4;m++)
 								post_allocations[m]= available_capacity[m]-allocations[m];
 							
+							}
 							}
 								
 						}
@@ -170,6 +172,5 @@ public class Ration {
 		System.out.println(details.toString());
 				
 	}
-
 
 }

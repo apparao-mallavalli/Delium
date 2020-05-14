@@ -70,8 +70,6 @@ public class AllDetails {
 				+ Arrays.toString(uoms) + ", allocations=" + Arrays.toString(allocations) + ", post_alloc_capacity="
 				+ Arrays.toString(post_alloc_capacity) + "]";
 	}
-	
-	
-	
+
 
 }
