@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Arrays;
+
 public class AllDetails {
 	
 	
@@ -60,6 +62,13 @@ public class AllDetails {
 		this.uoms = uoms;
 		this.allocations = allocations;
 		this.post_alloc_capacity = post_alloc_capacity;
+	}
+
+	@Override
+	public String toString() {
+		return "AllDetails [remainder=" + remainder + ", variant=" + Arrays.toString(variant) + ", uoms="
+				+ Arrays.toString(uoms) + ", allocations=" + Arrays.toString(allocations) + ", post_alloc_capacity="
+				+ Arrays.toString(post_alloc_capacity) + "]";
 	}
 	
 	

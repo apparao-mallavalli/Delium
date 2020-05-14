@@ -167,39 +167,8 @@ public class Ration {
 		
 		AllDetails details= map.get(1);
 		
-		System.out.println("reminder : "+details.getRemainder());
-		
-		System.out.print("variant : ");
-		double[] variant=details.getVariant();
-		for(int i=0;i<4;i++)
-			System.out.print(variant[i]+" ");
-		System.out.println(" ");
-		
-		
-		System.out.print("uoms : ");
-		int uoms[]=details.getUoms();
-		for(int i=0;i<4;i++)
-			System.out.print(uoms[i]+" ");
-		System.out.println(" ");
-		
-		System.out.print("allocations : ");
-		int allocations[]=details.getAllocations();
-		for(int i=0;i<4;i++)
-			System.out.print(allocations[i]+" ");
-		System.out.println(" ");
-		
-		System.out.print("post_alloc_capacity : ");
-		int post_allocations[]=details.getPost_alloc_capacity();
-		for(int i=0;i<4;i++)
-			System.out.print(post_allocations[i]+" ");
-		System.out.println(" ");
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(details.toString());
+				
 	}
 
 
